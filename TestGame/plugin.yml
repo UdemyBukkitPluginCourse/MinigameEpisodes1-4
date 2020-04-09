@@ -1,0 +1,9 @@
+name: TestGame
+author: dec4234
+version: 1.0
+api-version: 1.13
+main: tgSrc.TGMain
+commands:
+    arena:
+        usage: /arena <list/join/leave> [id]
+        description: Arena control command

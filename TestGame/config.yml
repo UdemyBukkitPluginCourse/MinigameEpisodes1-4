@@ -1,0 +1,25 @@
+required-players: 1
+countdown-seconds: 30
+lobby:
+    world: 'world'
+    x: 60.453
+    y: 122
+    z: 105.6
+    pitch: -90
+    yaw: 7
+# List of all possible arenas
+arenas:
+    '0':
+        world: 'world'
+        x: 100
+        y: 100
+        z: 100
+        pitch: 60
+        yaw: 60
+    '1':
+        world: 'world'
+        x: -100
+        y: 100
+        z: -100
+        pitch: 60
+        yaw: 60
