@@ -7,7 +7,7 @@ import org.bukkit.entity.Player;
 
 public class Game {
 
-	String filler = "§d§m§l------------------------------------";
+	String filler = "Â§dÂ§mÂ§l------------------------------------";
 	
 	private Arena arena;
 	private HashMap<UUID, Integer> points;
@@ -17,10 +17,10 @@ public class Game {
 		this.points = new HashMap<UUID, Integer>();
 	}
 	
-	public void start() {
+	public void start() { // Starts the game
 		arena.setState(GameState.LIVE);
 		
-		arena.sendMessage(filler + "\n§aThe game has started! \n§6The first player to break §b20 §6blocks wins! \n" + filler);
+		arena.sendMessage(filler + "\nÂ§aThe game has started! \nÂ§6The first player to break Â§b20 Â§6blocks wins! \n" + filler);
 		
 		for(UUID uuid : arena.getPlayers()) {
 			points.put(uuid, 0);
@@ -31,7 +31,7 @@ public class Game {
 		int po = points.get(p.getUniqueId()) + 1;
 		
 		if(po == 20) {
-			arena.sendMessage(filler + "\n§6" + p.getName() + " §awins! \n" + filler);
+			arena.sendMessage(filler + "\nÂ§6" + p.getName() + " Â§awins! \n" + filler);
 			
 			arena.reset();
 			return;
